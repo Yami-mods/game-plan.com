@@ -4,99 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exam Result Sheet</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(19, 19, 19);
+        }
 
-.result-container {
-    width: 60%;
-    background-color: rgb(10, 10, 10);
-    padding: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-top: +350px;
-}
+        .result-container {
+            width: 50%;
+            max-width: 1200px; /* Maximum width for larger screens */
+            background-color: rgb(10, 10, 10);
+            padding: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: +280px;
+        }
 
-.result-header {
-    text-align: center;
-    font-size: 28px;
-    color: #333;
-    margin-bottom: +20px;
-}
+        .result-header {
+            text-align: center;
+            font-size: 28px;
+            color: #fff;
+            margin-bottom: 20px;
+        }
 
-.student-info {
-    margin-bottom: +30px;
-    font-size: 18px;
-}
+        .student-info {
+            margin-bottom: 30px;
+            font-size: 18px;
+            color: white;
+        }
 
-.student-info p {
-    margin: 5px 0;
-}
+        .student-info p {
+            margin: 5px 0;
+        }
 
-.result-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-}
+        .result-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
 
-.result-table th,
-.result-table td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #ddd;
-}
+        .result-table th,
+        .result-table td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #ddd;
+            color: white;
+        }
 
-.result-table th {
-    background-color: #4CAF50;
-    color: white;
-}
+        .result-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
 
-.result-table tr:nth-child(even) {
-    background-color: rgb(22, 22, 22);
-}
+        .result-table tr:nth-child(even) {
+            background-color: rgb(22, 22, 22);
+        }
 
-.result-table tr:hover {
-    background-color: #ddd;
-}
+        .result-table tr:hover {
+            background-color: #ddd;
+        }
 
-.summary {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-}
-.student-info{
-    color: white;
-}
+        .summary {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
 
-.rules{
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-}
+        .rules {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
 
+        .rules p {
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .result-container {
+                width: 95%; /* Use more width on smaller screens */
+                padding: 30px;
+            }
+
+            .result-header {
+                font-size: 24px; /* Smaller header on mobile */
+            }
+
+            .student-info {
+                font-size: 16px;
+            }
+
+            .result-table th,
+            .result-table td {
+                font-size: 14px; /* Adjust font size in the table */
+            }
+
+            .summary {
+                font-size: 16px; /* Smaller summary text */
+            }
+
+            .rules p {
+                font-size: 16px; /* Smaller rule text */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .result-header {
+                font-size: 20px;
+            }
+
+            .student-info {
+                font-size: 14px;
+            }
+
+            .result-table th,
+            .result-table td {
+                font-size: 12px;
+            }
+
+            .summary {
+                font-size: 14px;
+            }
+
+            .rules p {
+                font-size: 14px;
+            }
+        }
     </style>
-
+</head>
+<body>
     <div class="result-container">
-        <h1 class="result-header"></h1>
-        
+   
+
         <div class="student-info">
             <p><strong>Game Name:</strong> 92JETTO</p>
             <p><strong>Agent:</strong> 𝒀𝑨𝑴𝑰</p>
             <p><strong>PLAN:</strong> M/8 Stages</p>
-           
         </div>
 
         <table class="result-table">
@@ -141,7 +195,7 @@
                 </tr>
                 <tr>
                     <td style="color: red;">6</td>
-                    <td style="color: green;"></style>6000</td>
+                    <td style="color: green;">6000</td>
                     <td style="color: aqua;">6000/6600</td>
                     <td></td>
                 </tr>
@@ -153,7 +207,7 @@
                 </tr>
                 <tr>
                     <td style="color: red;">8</td>
-                    <td style="color: green ;">7500</td>
+                    <td style="color: green;">7500</td>
                     <td style="color: aqua;">7500/8500</td>
                     <td></td>
                 </tr>
@@ -171,7 +225,7 @@
                 </tr>
                 <tr>
                     <td style="color: red;">11-Last</td>
-                    <td style="color: green;;">10000</td>
+                    <td style="color: green;">10000</td>
                     <td style="color: aqua;">10000/130000</td>
                     <td></td>
                 </tr>
@@ -182,14 +236,13 @@
             <p><strong>Total Deposit:</strong> 3000</p>
             <p><strong>Total Profit:</strong> 10000</p>
             <p><strong>Total Days:</strong> 10</p>
-           
         </div>
-        <div class="rules"></div>
-        <p><strong style="color: white; text-align: center; margin-left: +280px;">Always play with 8 Stages</strong></p>
-        <p><strong style="color: white; text-align: center; margin-left: +206px;">and naver be greedy.When yuor target is achived,</strong></p>
-        <p><strong style="color: white; text-align: center; margin-left: +305px;">CLOSE THE GAME</strong></p>
-       
+
+        <div class="rules">
+            <p><strong>Always play with 8 Stages</strong></p>
+            <p><strong>Never be greedy. When your target is achieved,</strong></p>
+            <p><strong>CLOSE THE GAME</strong></p>
+        </div>
     </div>
-   
 </body>
 </html>
